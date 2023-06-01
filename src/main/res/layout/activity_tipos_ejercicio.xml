@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TiposEjercicio">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@drawable/divisor_alto_vacio">
+
+
+            <TextView
+                android:id="@+id/viewTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ejercicios"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <ImageView
+                android:id="@+id/imgPecho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/pecho_01" />
+
+            <ImageView
+                android:id="@+id/imgBrazo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/brazo_01" />
+
+            <ImageView
+                android:id="@+id/imgEspalda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/espalda_01" />
+
+            <ImageView
+                android:id="@+id/imgGluteos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gluteos_01" />
+
+            <ImageView
+                android:id="@+id/imgPierna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/pierna_01" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
